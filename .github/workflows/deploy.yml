@@ -23,6 +23,9 @@ jobs:
       - name: dotnet test
         run: dotnet test ./JJS.Cache.sln
 
+      - name: dotnet build
+        run: dotnet build ./JJS.Cache.sln --configuration Release
+
       - name: dotnet pack
         run: dotnet pack ./JJS.Cache.sln --configuration Release --output ./artifacts
 
