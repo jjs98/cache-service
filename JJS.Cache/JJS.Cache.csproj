@@ -4,7 +4,7 @@
 		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>JJS.Cache</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>jjs98</Authors>
 		<Description>A CacheService to cache values in memory</Description>
 		<RepositoryUrl>https://github.com/jjs98/cache-service</RepositoryUrl>
