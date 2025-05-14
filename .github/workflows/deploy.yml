@@ -31,3 +31,6 @@ jobs:
 
       - name: publish to NuGet
         run: dotnet nuget push ./artifacts/*.nupkg --source ${{ secrets.NUGET_SOURCE }} --api-key ${{ secrets.NUGET_API_KEY }}
+
+      - name: publish to GitHub Packages
+        run: dotnet nuget push ./artifacts/*.nupkg --source ${{ secrets.PACKAGES_SOURCE_GITHUB }} --api-key ${{ secrets.TOKEN_GITHUB }}

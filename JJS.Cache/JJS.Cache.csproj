@@ -9,6 +9,7 @@
 		<Description>A CacheService to cache values in memory</Description>
 		<RepositoryUrl>https://github.com/jjs98/cache-service</RepositoryUrl>
 		<PackageTags>cache;di;library</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
@@ -16,6 +17,10 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.5" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
