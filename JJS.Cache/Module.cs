@@ -1,4 +1,5 @@
-﻿using JJS.Cache.Services;
+﻿using JJS.Cache.Interfaces;
+using JJS.Cache.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -12,7 +13,7 @@ public static class Module
         IConfiguration configuration
     )
     {
-        services.AddSingleton<CacheService>(provider =>
+        services.AddSingleton<ICacheService>(provider =>
         {
             var logger = provider.GetRequiredService<ILogger<CacheService>>();
             var defaultExpiration = TimeSpan.FromSeconds(60);
