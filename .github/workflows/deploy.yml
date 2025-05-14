@@ -1,0 +1,30 @@
+name: build and deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+   deploy:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: set up .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.x
+
+      - name: dotnet restore
+        run: dotnet restore ./JJS.Cache.sln
+
+      - name: dotnet test
+        run: dotnet test ./JJS.Cache.sln
+
+      - name: dotnet pack
+        run: dotnet pack ./JJS.Cache.sln --configuration Release --output ./artifacts
+
+      - name: publish to NuGet
+        run: dotnet nuget push ./artifacts/*.nupkg --source ${{ secrets.NUGET_SOURCE }} --api-key ${{ secrets.NUGET_API_KEY }}
