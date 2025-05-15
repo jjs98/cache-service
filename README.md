@@ -1,4 +1,6 @@
-# cache-service
+
+# JJS.Cache ![NuGet Version](https://img.shields.io/nuget/v/JJS.Cache)
+
 A CacheService to cache values in memory
 
 ## Installation
