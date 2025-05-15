@@ -10,7 +10,6 @@
 		<RepositoryUrl>https://github.com/jjs98/cache-service</RepositoryUrl>
 		<PackageTags>cache;di;library</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>

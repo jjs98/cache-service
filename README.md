@@ -1,5 +1,7 @@
+[![GitHub License](https://img.shields.io/github/license/jjs98/cache-service)](LICENSE)
+[![NuGet Version](https://img.shields.io/nuget/v/JJS.Cache)](https://www.nuget.org/packages/JJS.Cache/)
 
-# JJS.Cache ![NuGet Version](https://img.shields.io/nuget/v/JJS.Cache)
+# JJS.Cache
 
 A CacheService to cache values in memory
 
